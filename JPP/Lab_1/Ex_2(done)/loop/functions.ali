@@ -1,0 +1,48 @@
+V "GNAT Lib v10"
+P ZX
+
+RN
+RV SPARK_05
+
+U functions%b		functions.adb		6961deab NE OO PK IL
+
+U functions%s		functions.ads		8f6b60e7 EE NE OO PK IL
+
+D functions.ads		20240413215559 8f6b60e7 functions%s
+D functions.adb		20240413215605 e60abe4c functions%b
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s b [factorial functions 8 13 none]
+G c Z s b [gcd functions 9 13 none]
+G c Z s b [solve_diophantine functions 10 13 none]
+G c Z s s [equation_solutionIP functions 2 9 none]
+X 1 functions.ads
+1K9*functions 11l5 11e14 2|1b14 53l5 53t14
+2R9*Equation_Solution 6e14 10r68 2|24r68
+3i7*X{integer}
+4i7*Y{integer}
+5i7*GCD{positive}
+8V13*Factorial{positive} 8>24 2|2b13 9l8 9t17
+8i24 N{positive} 2|2b24 5r21
+9V13*GCD{positive} 9>18 9>21 2|11b13 22l8 22t11 45s16 46s24 48s41 49s41 50s34
+9i18 A{natural} 2|11b18 12r28
+9i21 B{natural} 2|11b21 13r28
+10V13*Solve_Diophantine{2R9} 10>32 10>35 10>48 2|24b13 52l8 52t25
+10i32 A{integer} 2|24b32 26r28 45r20 46r28
+10i35 B{integer} 2|24b35 27r28 45r23 46r31
+10i48 C{natural} 2|24b48 45r10 48r37 49r37
+X 2 functions.adb
+3i7 Result{positive} 6m10 6r20 8r14
+5i11 I{integer} 6r29
+12i7 Local_A{natural} 18r21 19m10 21r14
+13i7 Local_B{natural} 16r13 17r18 18m10 18r33
+14i7 Temp{natural} 17m10 19r21
+25i7 X{integer} 29m7 38r18 39m10 39r35
+25i10 Y{integer} 30m7 41r18 42m10 42r35
+25i13 Last_X{integer} 31m7 39r15 40m10 48m10 48r20 50r18
+25i21 Last_Y{integer} 32m7 42r15 43m10 49m10 49r20 50r26
+25i29 Temp{integer} 35m10 37r21 38m10 40r20 41m10 43r20
+25i35 Quotient{integer} 34m10 39r24 42r24
+26i7 Local_A{integer} 34r30 35r18 36m10 48r45 49r45 50r38
+27i7 Local_B{integer} 33r13 34r40 36r21 37m10 37r30 48r54 49r54 50r47
+

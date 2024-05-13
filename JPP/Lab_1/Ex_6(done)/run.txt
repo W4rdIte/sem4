@@ -1,0 +1,3 @@
+run:
+    gcc -shared -o functions.so -fPIC functions.c
+    python wrapper.py

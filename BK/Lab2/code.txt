@@ -1,0 +1,14 @@
+
+dla cyferek ?d
+echo -n "123" | md5sum | cut -d' ' -f1 >> hashes.txt
+hashcat -a3 -m0 hashes.txt
+hashcat -a3 -m0 -1 ?d hashes.txt ?1?1?1?1?1?1
+
+dla cyferek i liter ?d?l
+echo -n "lol2005" | md5sum | cut -d' ' -f1 >> hashes.txt
+hashcat -a3 -m0 hashes.txt
+hashcat -a3 -m0 -1 ?d?l hashes.txt ?1?1?1?1?1?1?1
+
+
+echo -n "agnieszka12345." | md5sum | cut -d' ' -f1 >> hashes.txt
+hashcat -a6 -m0  hashes.txt wordlist_pl.txt ?d?d?d?d?d?s

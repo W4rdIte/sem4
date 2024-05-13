@@ -1,0 +1,4 @@
+cc --shared -o wrapper.so -fPIC wrapper.c -I/usr/include/python3.10 -lpython3.10
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
+export PYTHONPATH=$PYTHONPATH:.
+cc -o main main.c wrapper.so -I/usr/include/python3.10 -lpython3.10

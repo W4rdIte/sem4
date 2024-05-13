@@ -1,0 +1,67 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U main%b		main.adb		a86d257e NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W functions%s		functions.adb		functions.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D functions.ads		20240413215559 8f6b60e7 functions%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D main.adb		20240413220859 89f290f4 main%b
+D system.ads		20230707070819 4635ec04 system%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 4 11 none]
+G r c none [main standard 4 11 none] [factorial functions 8 13 none]
+G r c none [main standard 4 11 none] [gcd functions 9 13 none]
+G r c none [main standard 4 11 none] [solve_diophantine functions 10 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r23
+X 6 a-textio.ads
+57K13*Text_IO 727e16 11|1w10 1r27
+508U14*Put_Line 11|10s5 11s5 12s5 14s5
+X 8 functions.ads
+1K9*functions 11e14 11|2w6 2r22
+2R9*Equation_Solution 6e14 11|8r14
+3i7*X{integer} 11|14r163
+4i7*Y{integer} 11|14r200
+8V13*Factorial{positive} 11|11s46
+9V13*GCD{positive} 11|12s40
+10V13*Solve_Diophantine{2R9} 11|13s15
+X 11 main.adb
+4U11*Main 4b11 15l5 15t9
+5i5 A{integer} 12r44 13r33 14r72
+6i5 B{integer} 12r47 13r36 14r98
+7i5 C{positive} 13r39 14r123
+8r5 Result{8|2R9} 13m5 14r156 14r193
+
