@@ -1,0 +1,44 @@
+
+lisp
+    sbcl --load functions.lisp
+        (binomial 5 2)
+        (pascals-triangle-row 5)
+        (merge-sort '(5 2 9 1 5 6))
+        (diophantine 15 25)
+        (prime-factors 56)
+        (totient 9)
+        (totient2 9)
+        (is-prime 11)
+        (primes 5)
+
+haskell
+    ghci 
+        :l functions.hs
+            binomial 5 2
+            pascalsTriangleRow 5
+            mergeSort [5,2,9,1,5,6]
+            diophantine 15 25
+            primeFactors 56
+            totient 9
+            totient2 9
+            isPrime 11
+            primes 5
+
+sml
+    sml
+        use "functions.sml";
+            binomial(5, 2);
+            pascalsTriangleRow(5);
+            mergeSort([5,2,9,1,5,6]);
+            diophantine(15,25);
+            primeFactors(56);
+            totient(9);
+            totient2(9);
+            isPrime(11);
+            primes(5);
+prolog
+    mergeSort([5,2,9,1,5,6], SortedList).
+    diophantine(15, 25, Z, X, Y).
+    primeFactors(56, Factors).
+    totient(9, Phi).
+    primes(5, Primes).

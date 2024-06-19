@@ -1,0 +1,26 @@
+[GENERATED OBJECT FILE]
+b__dining_philosophers.o
+[PROJECT FILES]
+/mnt/d/Programming/Projects/2.2rok/JPP/Lab_4/Ada/dining_philosophers.gpr
+20240527084812 9edc3eae1051be7f2fb22aac4d8ea4cc
+/mnt/d/Programming/Projects/2.2rok/JPP/Lab_4/Ada/config/dining_philosophers_config.gpr
+20240527085427 8d3ab47ed21609fe4f490ce3e05fffd6
+[BOUND OBJECT FILES]
+/mnt/d/Programming/Projects/2.2rok/JPP/Lab_4/Ada/obj/development/chopstick.o
+/mnt/d/Programming/Projects/2.2rok/JPP/Lab_4/Ada/obj/development/philosopher.o
+/mnt/d/Programming/Projects/2.2rok/JPP/Lab_4/Ada/obj/development/dining_philosophers.o
+[GENERATED SOURCE FILES]
+b__dining_philosophers.ads
+b__dining_philosophers.adb
+b__dining_philosophers.ali
+[RESULTING OPTIONS]
+-L/mnt/d/Programming/Projects/2.2rok/JPP/Lab_4/Ada/obj/development/
+-L/mnt/d/Programming/Projects/2.2rok/JPP/Lab_4/Ada/obj/development/
+-L/home/wolski/.local/share/alire/toolchains/gnat_native_13.2.2_a27fd794/lib/gcc/x86_64-pc-linux-gnu/13.2.0/adalib/
+-static
+-static-libgcc
+/home/wolski/.local/share/alire/toolchains/gnat_native_13.2.2_a27fd794/lib/gcc/x86_64-pc-linux-gnu/13.2.0/adalib/libgnarl.a
+/home/wolski/.local/share/alire/toolchains/gnat_native_13.2.2_a27fd794/lib/gcc/x86_64-pc-linux-gnu/13.2.0/adalib/libgnat.a
+-lrt
+-lpthread
+-ldl

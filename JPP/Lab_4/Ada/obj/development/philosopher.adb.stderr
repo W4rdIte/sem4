@@ -1,0 +1,5 @@
+philosopher.adb:12:49: (style) space required
+philosopher.adb:14:49: (style) space required
+philosopher.adb:19:49: (style) space required
+philosopher.adb:21:49: (style) space required
+philosopher.ads:4:80: (style) this line is too long

@@ -1,0 +1,160 @@
+V "GNAT Lib v13"
+M P W=8
+A -Og
+A -gnatA
+A -ffunction-sections
+A -fdata-sections
+A -g
+A -gnatwa
+A -gnatw.X
+A -gnatVa
+A -gnaty3
+A -gnatya
+A -gnatyA
+A -gnatyB
+A -gnatyb
+A -gnatyc
+A -gnaty-
+A -gnatyd
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatW8
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV MAX_TASKS=1+
+
+U dining_philosophers%b	dining_philosophers.adb	46a6089a NE OO SU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W chopstick%s		chopstick.adb		chopstick.ali
+W philosopher%s		philosopher.adb		philosopher.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20230727081304 76789da1 ada%s
+D a-assert.ads		20230727081303 ba465f5c ada.assertions%s
+D a-except.ads		20230727081304 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20230727081304 bf4f806b ada.finalization%s
+D a-numeri.ads		20230727081304 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20230727081304 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20230727081304 711e0174 ada.numerics.big_numbers.big_integers_ghost%s
+D a-reatim.ads		20230727081303 b89a10c3 ada.real_time%s
+D a-stream.ads		20230727081304 119b8fb3 ada.streams%s
+D a-string.ads		20230727081304 90ac6797 ada.strings%s
+D a-sttebu.ads		20230727081304 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20230727081304 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20230727081304 9eaa38c6 ada.tags%s
+D a-unccon.ads		20230727081304 0e9b276f ada.unchecked_conversion%s
+D chopstick.ads		20240527084756 ee103fef chopstick%s
+D dining_philosophers.adb  20240527084759 e107c434 dining_philosophers%b
+D interfac.ads		20230727081304 15f799c2 interfaces%s
+D i-c.ads		20230727081304 5c5a6c17 interfaces.c%s
+D philosopher.ads	20240527084803 49b1f341 philosopher%s
+D system.ads		20230727081304 426dafb8 system%s
+D s-atacco.ads		20230727081304 903317eb system.address_to_access_conversions%s
+D s-assert.ads		20230727081304 9c4520c7 system.assertions%s
+D s-casuti.ads		20230727081304 cf13d755 system.case_util%s
+D s-exctab.ads		20230727081304 91bef6ef system.exception_table%s
+D s-finmas.ads		20230727081304 bd688734 system.finalization_masters%s
+D s-finroo.ads		20230727081304 4ff27390 system.finalization_root%s
+D s-imagei.ads		20230727081304 c707dfd0 system.image_i%s
+D s-imgint.ads		20230727081304 d4a52a9b system.img_int%s
+D s-linux.ads		20230727081303 34850a8c system.linux%s
+D s-multip.ads		20230727081304 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20231020175947 d98e680e system.os_constants%s
+D s-osinte.ads		20230727081303 e4f53740 system.os_interface%s
+D s-parame.ads		20230727081304 d494a4a6 system.parameters%s
+D s-putima.ads		20230727081304 17291fe4 system.put_images%s
+D s-secsta.ads		20230727081304 578279f5 system.secondary_stack%s
+D s-soflin.ads		20230727081304 df77073e system.soft_links%s
+D s-stache.ads		20230727081304 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20230727081304 5be75682 system.stack_usage%s
+D s-stalib.ads		20230727081304 1c9580f6 system.standard_library%s
+D s-stoele.ads		20230727081304 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20230727081304 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20230727081304 e9fa2dd8 system.storage_pools%s
+D s-tasinf.ads		20230727081303 528dde74 system.task_info%s
+D s-taspri.ads		20230727081303 4ec891e7 system.task_primitives%s
+D s-taprop.ads		20230727081303 6eefbe12 system.task_primitives.operations%s
+D s-taskin.ads		20230727081303 0ec7ab0b system.tasking%s
+D s-taprob.ads		20230727081303 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20230727081303 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20230727081303 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20230727081303 cca55c94 system.tasking.stages%s
+D s-traent.ads		20230727081304 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20230727081304 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20230727081304 1f610d7a system.val_int%s
+D s-valuns.ads		20230727081304 e8a1f424 system.val_uns%s
+D s-valuti.ads		20230727081304 fcd603d8 system.val_util%s
+D s-valuei.ads		20230727081304 11081e09 system.value_i%s
+D s-vaispe.ads		20230727081304 44130d39 system.value_i_spec%s
+D s-valueu.ads		20230727081304 18770347 system.value_u%s
+D s-vauspe.ads		20230727081304 a67b2f28 system.value_u_spec%s
+D s-widuns.ads		20230727081304 866a5800 system.wid_uns%s
+D s-widthu.ads		20230727081304 b32f15e2 system.width_u%s
+G a e
+G c Z b b [dining_philosophers standard 4 11 none]
+G r s chopstick_type [dining_philosophers standard 4 11 none] [chopstick_typeVIP chopstick 2 4 none]
+G r s philosopher_task [dining_philosophers standard 4 11 none] [philosopher_taskVIP philosopher 4 4 none]
+G r r none [dining_philosophers standard 4 11 none] [start philosopher__philosopher_task 5 13 none]
+X 15 chopstick.ads
+1K9*Chopstick 8e14 16|1w6 8r64
+2W19*Chopstick_Type 7e22 16|8r74
+X 16 dining_philosophers.adb
+4U11*Dining_Philosophers 4b11 33l5 33t24
+5N4 Number_Of_Philosophers 8r29 11r44 16r18 18r41 22r42 30r18
+6N4 Meal_Limit 26r98
+8a4 Chopsticks(15|2W19) 26m13 26r13 26m55 26r55
+10P9 Philosopher_Task_Pointer(19|4T14) 11r71
+11a4 Philosopher_Task_Pointers(10P9) 25m7 31r7
+13i4 Left_Chopstick_Index{integer} 18m10 21m10 26r25
+14i4 Right_Chopstick_Index{integer} 19m10 22m10 26r67
+16i8 I{integer} 17r10 18r35 19r35 21r34 22r36 25r34 26r10
+30i8 I{integer} 31r34
+X 19 philosopher.ads
+3K9*Philosopher 16|2w6 10r44 25r44 19|7e16
+4T14*Philosopher_Task 16|10r56 25r56 19|6e24
+5Y13 Start 16|31s37
+X 38 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

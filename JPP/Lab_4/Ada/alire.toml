@@ -1,0 +1,12 @@
+name = "dining_philosophers"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Konrad"]
+maintainers = ["konrad.wolski.adam@gmail.com"]
+maintainers-logins = ["W4rdIte"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["dining_philosophers"]

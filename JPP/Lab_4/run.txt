@@ -1,0 +1,9 @@
+Ada:
+    alr build
+    alr run
+
+Go:
+    go run  problem.go
+    
+Python:
+    python problem.py

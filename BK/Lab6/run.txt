@@ -1,0 +1,58 @@
+openssl s_client -showcerts -connect pwr.edu.pl:443 > certyfikaty.txt
+awk 'split_after == 1 {n++; split_after=0} /-----END CERTIFICATE-----/ {split_after=1} {print > "certyfikat" n ".pem"}' < certyfikaty.txt
+openssl x509 -in certyfikat.pem -text -noout
+openssl x509 -in certyfikat.pem -noout -issuer
+openssl x509 -in certyfikat.pem -noout -text | grep "Signature Algorithm"
+openssl x509 -in certyfikat.pem -noout -dates
+openssl x509 -in certyfikat.pem -noout -subject
+openssl x509 -in certyfikat.pem -noout -text | grep -A 1 "Subject Alternative Name"
+openssl x509 -in certyfikat.pem -noout -text | grep -A 100 "X509v3 extensions"
+openssl x509 -in certyfikat.pem -noout -text | grep -A 4 "CRL Distribution Points"
+openssl x509 -in certyfikat.pem -noout -text | grep -A 4 "Authority Information Access"
+
+cat certyfikat.pem certyfikat1.pem certyfikat2.pem > chain.pem
+openssl verify -CAfile chain.pem certyfikat.pem
+
+openssl s_client -showcerts -connect pwr.edu.pl:443 </dev/null 2>/dev/null | awk '/-----BEGIN CERTIFICATE-----/{i++}i==2' > certyfikat_issuer.pem
+openssl x509 -in certyfikat.pem -noout -ocsp_uri
+openssl ocsp -issuer certyfikat_issuer.pem -cert certyfikat.pem -url http://GEANT.ocsp.sectigo.com 
+
+
+zad3
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib prefix="e" uri="https://www.owasp.org/index.php/OWASP_Java_Encoder_Project" %>
+
+<html>
+<head>
+    <title>Using GET and POST Method to Read Form Data</title>
+</head>
+<body>
+    <h1>Using POST Method to Read Form Data</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td><b>First Name:</b></td>
+                <td>${e:forHtml(param.first_name)}</td>
+            </tr>
+            <tr>
+                <td><b>Last Name:</b></td>
+                <td>${e:forHtml(param.last_name)}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+import org.owasp.validator.html.*;
+
+public class AntiSamyController {
+    public void saveNewComment(int threadID, int userID, String newComment){
+
+        Policy policy = Policy.getInstance("antisamy-slashdot.xml");
+        AntiSamy as = new AntiSamy();
+        CleanResults cr = as.scan(newComment, policy);
+        MyCommentDAO.addComment(threadID, userID, cr.getCleanHTML());
+    }
+}
