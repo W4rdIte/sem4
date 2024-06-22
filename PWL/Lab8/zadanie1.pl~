@@ -13,4 +13,3 @@ kolorowanie(X) :-
 	R8 #\= R9.
 
 %kolorowanie(X).
-%kolorowanie(X), label(X).

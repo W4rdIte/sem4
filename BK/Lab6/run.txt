@@ -1,5 +1,6 @@
 openssl s_client -showcerts -connect pwr.edu.pl:443 > certyfikaty.txt
 awk 'split_after == 1 {n++; split_after=0} /-----END CERTIFICATE-----/ {split_after=1} {print > "certyfikat" n ".pem"}' < certyfikaty.txt
+
 openssl x509 -in certyfikat.pem -text -noout
 openssl x509 -in certyfikat.pem -noout -issuer
 openssl x509 -in certyfikat.pem -noout -text | grep "Signature Algorithm"

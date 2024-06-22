@@ -10,3 +10,5 @@ plecak(Wartosci, Wielkosci, Pojemnosc, Zmienne) :-
 		scalar_product(Wartosci, Zmienne, #=, V),
 	W #=< Pojemnosc,
 	once(labeling([max(V)], Zmienne)).
+
+%plecak([10,7,1,3,2],[9,12,2,7,5], 15, X).

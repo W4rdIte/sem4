@@ -27,3 +27,5 @@ schedule(H, Ss, MS) :-
     cumulative(Y1, [limit(X1)]),
     cumulative(Y2, [limit(X2)]),
     once(labeling([min(MS), ff], [MS | Ss])).
+
+%schedule(20, S, MS).
