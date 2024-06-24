@@ -1,5 +1,4 @@
 from typing import List
-
 import libscrc
 
 CRC_SIZE = 8
@@ -34,9 +33,22 @@ def encode(bits: str) -> str:
 
 
 def decode(bits: str) -> str:
+    # Delete everything before the first flag
+    bits = bits.split(FLAG_BYTE, 1)[-1]
+
+    # Delete everything after the last flag
+    bits = bits.rsplit(FLAG_BYTE, 1)[0]
+
     output = ""
     frames = bits.split(FLAG_BYTE)
-    frames = [frame for frame in frames if frame != ""]
+    # print(f"{frames}")
+
+    frames = [frame for counter, frame in enumerate(frames) if counter % 2 == 0]
+    # for counter, frame in enumerate(frames):
+    #     print(counter, frame)
+
+    # print(f"{frames}")
+
     successful_frames = 0
     for frame in frames:
         frame = _unstuff_bits(frame, ONES_RUN_LENGTH)
