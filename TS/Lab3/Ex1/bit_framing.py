@@ -43,9 +43,9 @@ def decode(bits: str) -> str:
     frames = bits.split(FLAG_BYTE)
     # print(f"{frames}")
 
-    frames = [frame for counter, frame in enumerate(frames) if counter % 2 == 0]
-    # for counter, frame in enumerate(frames):
-    #     print(counter, frame)
+    frames = [frame for frame in frames if frame != ""]
+    for counter, frame in enumerate(frames):
+        print(counter, frame)
 
     # print(f"{frames}")
 

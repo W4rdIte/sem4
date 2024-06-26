@@ -29,12 +29,12 @@ class Device:
         self._state = self.State.RECEIVING
         self._is_ready_to_transmit = True
 
-        self._successfull_transmissions = 0
+        self._successful_transmissions = 0
         self._failed_transmissions = 0
 
     @property
-    def successfull_transmissions(self) -> int:
-        return self._successfull_transmissions
+    def successful_transmissions(self) -> int:
+        return self._successful_transmissions
 
     @property
     def failed_transmissions(self) -> int:
@@ -78,7 +78,7 @@ class Device:
                 self._change_state(self.State.RECEIVING)
                 self._is_ready_to_transmit = True
                 self._failed_attempts = 0
-                self._successfull_transmissions += 1
+                self._successful_transmissions += 1
 
     def _jam(self) -> None:
         self._tick_counter += 1
